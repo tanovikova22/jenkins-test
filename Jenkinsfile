@@ -1,10 +1,10 @@
 pipeline {
-    agent: {
-        docker: { image 'node:16.1' }
+    agent {
+        docker { image 'node:16.1' }
     }
-    stages: {
+    stages {
         stage('Testing') {
-            steps: {
+            steps {
                 sh "echo Node version: \n"
                 sh "node --version"
             }
